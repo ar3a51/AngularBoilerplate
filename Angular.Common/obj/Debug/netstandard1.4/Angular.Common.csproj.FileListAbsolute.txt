@@ -1,0 +1,7 @@
+C:\Users\m1dwa\Project\AngularBoilerplate\Angular.Common\bin\Debug\netstandard1.4\Angular.Common.deps.json
+C:\Users\m1dwa\Project\AngularBoilerplate\Angular.Common\bin\Debug\netstandard1.4\Angular.Common.dll
+C:\Users\m1dwa\Project\AngularBoilerplate\Angular.Common\obj\Debug\netstandard1.4\Angular.Common.csprojResolveAssemblyReference.cache
+C:\Users\m1dwa\Project\AngularBoilerplate\Angular.Common\obj\Debug\netstandard1.4\Angular.Common.AssemblyInfo.cs
+C:\Users\m1dwa\Project\AngularBoilerplate\Angular.Common\bin\Debug\netstandard1.4\Angular.Common.pdb
+C:\Users\m1dwa\Project\AngularBoilerplate\Angular.Common\obj\Debug\netstandard1.4\Angular.Common.dll
+C:\Users\m1dwa\Project\AngularBoilerplate\Angular.Common\obj\Debug\netstandard1.4\Angular.Common.pdb
