@@ -6,6 +6,8 @@ namespace Angular.Common.Repository
 {
   public interface ISQLMapper
   {
+    int Identity { set; }
+
     SQLQuery InsertStatement();
     SQLQuery UpdateStatement();
   }

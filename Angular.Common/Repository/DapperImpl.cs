@@ -34,14 +34,17 @@ namespace Angular.Common.Repository
       }
     }
 
-    public int Insert<T>(T obj) where T: ISQLMapper
+    public void Insert<T>(T obj) where T: ISQLMapper
     {
       OpenConnection();
       DynamicParameters param = Convert(obj.InsertStatement().Params.ToArray());
-      int id = _connection.Execute(obj.InsertStatement().Query, param,Transaction);
-      CloseConnection();
+      int rowCount = _connection.Execute(obj.InsertStatement().Query, param,Transaction);
 
-      return id;
+      if (rowCount > 0)
+      {
+        obj.Identity = param.Get<int>("@id");
+      }
+      CloseConnection();
     }
 
     public void OpenConnection()

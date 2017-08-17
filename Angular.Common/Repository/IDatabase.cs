@@ -12,7 +12,7 @@ namespace Angular.Common.Repository
 
       IDbConnection Connection { get; }
       void OpenConnection();
-      int Insert<T>(T obj) where T:ISQLMapper;
+      void Insert<T>(T obj) where T:ISQLMapper;
       void Update<T>(T obj) where T:ISQLMapper;
       void CloseConnection();
 
