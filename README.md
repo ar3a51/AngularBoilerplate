@@ -16,4 +16,4 @@ Angular Template using asp.net core and dapper
 - Select Linux flavor
 - follow download instruction
 
-- download this repo, go to the folder and execute "dotnet run"
+- download this repo, go to the folder and execute "dotnet build" to compile or "dotnet run" to run the project
