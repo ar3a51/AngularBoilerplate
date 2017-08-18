@@ -4992,9 +4992,6 @@
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
       "projectUniqueName": "C:\\Users\\m1dwa\\Project\\AngularBoilerplate\\Angular.Common\\Angular.Common.csproj",
       "projectName": "Angular.Common",
@@ -5030,31 +5027,31 @@
     "frameworks": {
       "netstandard2.0": {
         "dependencies": {
-          "Dapper": {
-            "target": "Package",
-            "version": "1.50.2"
-          },
-          "MySql.Data": {
-            "target": "Package",
-            "version": "6.9.9"
-          },
           "NETStandard.Library": {
             "suppressParent": "All",
             "target": "Package",
             "version": "2.0.0",
             "autoReferenced": true
           },
-          "System.Linq": {
+          "Autofac": {
             "target": "Package",
-            "version": "4.3.0"
+            "version": "4.6.1"
+          },
+          "Dapper": {
+            "target": "Package",
+            "version": "1.50.2"
           },
           "Microsoft.CSharp": {
             "target": "Package",
             "version": "4.4.0"
           },
-          "Autofac": {
+          "MySql.Data": {
             "target": "Package",
-            "version": "4.6.1"
+            "version": "6.9.9"
+          },
+          "System.Linq": {
+            "target": "Package",
+            "version": "4.3.0"
           }
         },
         "imports": [

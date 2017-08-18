@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Microsoft.AspNetCore.StaticFiles;
+using System.IO;
 
 namespace AngularBoilerplate
 {
@@ -36,6 +38,21 @@ namespace AngularBoilerplate
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
+
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
+
+            app.Use(async (Context, next) => {
+
+              await next();
+
+              if (Context.Response.StatusCode == 404 && !Path.HasExtension(Context.Request.Path.Value) && !Context.Request.Path.Value.StartsWith("api"))
+              {
+                Context.Request.Path = "/index.html";
+                Context.Response.StatusCode = 200;
+                await next();
+              }
+            });
 
             app.UseMvc();
         }

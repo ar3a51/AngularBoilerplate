@@ -16,7 +16,9 @@
 *.launch
 .settings/
 *.sublime-workspace
-.vs
+/wwwroot
+/bin
+/obj
 
 # IDE - VSCode
 .vscode/*
@@ -24,6 +26,7 @@
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+
 
 # misc
 /.sass-cache
@@ -34,6 +37,7 @@ npm-debug.log
 testem.log
 /typings
 yarn-error.log
+README.md
 
 # e2e
 /e2e/*.js
@@ -42,9 +46,3 @@ yarn-error.log
 # System Files
 .DS_Store
 Thumbs.db
-.vs/AngularBoilerplate/v15/sqlite3/storage.ide
-.vs/AngularBoilerplate/v15/sqlite3/storage.ide
-Angular.Common/obj/Debug/netstandard2.0/Angular.Common.csproj.CoreCompileInputs.cache
-Angular.Models/obj/Debug/netstandard2.0/Angular.Models.csproj.CoreCompileInputs.cache
-Angular.Common/obj/project.assets.json
-Angular.Models/obj/Debug/netstandard2.0/Angular.Models.csprojResolveAssemblyReference.cache
