@@ -9,7 +9,7 @@ Angular Template using asp.net core and dapper
 
 - download Visual Studio 2017 Community edition
 
-- Download and install SDK from the following https://www.microsoft.com/net/core#windowscmd
+- Download and install SDK .net core 2.0 from the following https://www.microsoft.com/net/core#windowscmd
 
 # Linux
 - Download and install SDK from https://www.microsoft.com/net/core#linuxredhat
