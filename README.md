@@ -1,6 +1,8 @@
 # Angular Boilerplate
 Angular Template using asp.net core and dapper
 
+![Build Status](https://travis-ci.org/ar3a51/AngularBoilerplate.svg?branch=master)
+
 # Setup Instruction
 
 # Windows
