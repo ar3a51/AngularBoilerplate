@@ -11,3 +11,4 @@ matrix:
         - "node"
       cache:
         - "node_modules"
+      script: build.sh
