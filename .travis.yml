@@ -1,14 +1,5 @@
-matrix:
-  include:
-    - language: node_js
-        node_js:
-          - "6"
-        cache:
-          - "node_modules"
-        script: build.sh
-    - language: csharp
-        solution: AngularBoilerplate.sln
-        dotnet: 2.0.0
-        script:
-          - dotnet restore
-          - dotnet build --configuration Release
+language: csharp
+solution: AngularBoilerplate.sln
+dotnet: 2.0.0
+script:
+  - build.sh
