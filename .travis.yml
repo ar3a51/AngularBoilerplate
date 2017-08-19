@@ -1,6 +1,13 @@
-language: csharp
-solution: AngularBoilerplate.sln
-dotnet: 2.0.0
-script:
-  - dotnet restore
-  - dotnet build --configuration Release
+matrix:
+  include:
+    -language: csharp
+      solution: AngularBoilerplate.sln
+      dotnet: 2.0.0
+      script:
+        - dotnet restore
+        - dotnet build --configuration Release
+    -language: node_js
+      node_js:
+        - "node"
+      cache:
+        - "node_modules"
