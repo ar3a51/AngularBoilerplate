@@ -1,5 +1,6 @@
 language: csharp
 solution: AngularBoilerplate.sln
 dotnet: 2.0.0
-script: 
+script:
+  - chmod +x build.sh
   - ./build.sh
